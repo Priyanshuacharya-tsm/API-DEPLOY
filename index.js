@@ -19,6 +19,6 @@ app.use('/api/tasks', taskRoutes);
 // This MUST be the last middleware used
 app.use(errorHandler);
 
-app.listen(port, () => {
+app.listen(port,'0.0.0.0', () => {
   console.log(`Server running at http://localhost:${port}`);
 });
